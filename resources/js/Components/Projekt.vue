@@ -32,11 +32,13 @@
                 </div>
             </div>
             <div class="flex self-center justify-center items-center">
-                <button
-                    class="flex justify-center items-center gap-4 mt-4 mr-4 px-6 py-2 h-12 bg-indigo-500 rounded text-white font-bold">
-                    <img src="github-mark-white.png" class="w-10 h-10"> Github
-                </button>
-                <button class="mt-4 px-6 py-2 h-12 bg-indigo-500 rounded text-white font-bold">Test it!</button>
+                <a :href="project.githublink " target="_blank">
+                    <button
+                        class="flex justify-center items-center gap-4 mt-4 mr-4 px-6 py-2 h-12 bg-indigo-500 rounded text-white font-bold">
+                        <img src="github-mark-white.png" class="w-10 h-10"> Github
+                    </button>
+                </a>
+                <button class="mt-4 px-6 py-2 h-12 bg-indigo-500 rounded text-white font-bold">Test it! (in work)</button>
             </div>
         </div>
     </div>
@@ -51,6 +53,7 @@ const projects = ref([
         id: 1,
         title: "Memorily",
         description: "Ein effizientes CRUD-System, das den Nutzern ermöglicht, Notizen dynamisch zu erstellen, aktualisieren, lesen und löschen. Entwickelt mit Laravel und optimiert mit PaperCSS für eine reibungslose Benutzererfahrung. Backend-Datenpersistenz wurde mit einer MySQL-Datenbank realisiert.",
+        githublink: "https://github.com/Batti-M/Memorily",
         image: "memorily.jpeg",
         techstack: ["Laravel", "PaperCSS", "MySQL"],
         showDescription: false
@@ -59,6 +62,7 @@ const projects = ref([
         id: 2,
         title: "ProspektCreator",
         description: "Eine interaktive Webanwendung, die CSV-Uploads für die Prospekterstellung unterstützt. Die Drag-and-Drop-Funktionalität bietet eine intuitive Benutzeroberfläche zur Prospektgestaltung. Integrierte Features erlauben es den Nutzern, per Klick auf Produkte eine Einkaufsliste zu generieren.",
+        githublink: "https://github.com/Batti-M/ProspektCreator",
         image: "prospektcreator.jpeg",
         techstack: ["Laravel", "VueJS", "Inertia", "MySQL", "tailwindCSS"],
         showDescription: false
@@ -68,6 +72,7 @@ const projects = ref([
         title: "Catogram",
         description: "Ein Instagram-Klon, entwickelt sowohl als Single Page Application (SPA) mit Laravel, Vue und Inertia, als auch mit reinen Laravel Blade Views (und bisschen AlpineJS). Authentifizierung über GitHub wurde implementiert, zusammen mit einer Live-Kommentarfunktion über Pusher für Echtzeitinteraktionen. Infinite Scrolling sorgt für eine nahtlose Nutzererfahrung.",
         image: "catogram.jpeg",
+        githublink: "https://github.com/Batti-M/Catogram",
         techstack: ["Laravel", "VueJS", "Inertia", "MySQL", "tailwindCSS"],
         showDescription: false
     },

@@ -126,7 +126,7 @@ p {
 }
 
 .slide-fade-enter-active {
-    transition: all 1.2s ease-in 1.2s;
+    transition: all 1.2s ease-in 0.75s;
 }
 
 .slide-fade-leave-active {
